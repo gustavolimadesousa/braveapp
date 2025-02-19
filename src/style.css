@@ -1,0 +1,286 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  background-color: #b3e5ff;
+  color: #002233;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blurred {
+  filter: blur(3px);
+  overflow: hidden;
+}
+
+/* HEADER CODE */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #002233;
+  color: #e6f7ff;
+}
+
+.header-left {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-right: 2px solid #99ddff;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+#datetime {
+  font-size: 15px;
+  color: gray;
+}
+
+.weather-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.weather-icon.large {
+  width: 80px;
+  height: 80px;
+}
+
+.header-current-temp {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 1rem;
+}
+
+.header-right {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  width: 50%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #99ddff;
+}
+
+.value-sub-info {
+  font-size: 0.75rem;
+  font-weight: lighter;
+}
+
+/* DAY SECTION CODE */
+.day-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 75px);
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #002233;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-card-day {
+  font-size: 0.75rem;
+  color: hsl(200, 100%, 20%);
+  margin-bottom: 0.25rem;
+}
+
+.day-card img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 0.25rem;
+}
+
+/* HOUR SECTION CODE */
+.hour-section {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+  margin: 1rem 0;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hour-row {
+  background-color: hsl(200, 100%, 90%);
+}
+
+.hour-row:nth-child(2n) {
+  background-color: hsl(200, 100%, 85%);
+}
+
+.hour-row > td {
+  padding: 0.25rem 0.5rem;
+}
+
+.label-hour {
+  color: #004466;
+}
+
+/* MAP SECTION CODE */
+#map {
+  height: 850px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.weather-map-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.day-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #002233;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.day-card-day {
+  font-size: 0.75rem;
+  color: hsl(200, 100%, 20%);
+  margin-bottom: 0.25rem;
+}
+
+.day-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .weather-map-container {
+    flex-direction: column;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #datetime {
+  font-size: 12px;
+  color: gray;
+}
+
+
+  .header-left {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #99ddff;
+    padding-bottom: 1rem;
+  }
+
+  .header-right {
+    width: 100%;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .day-section {
+    grid-template-columns: repeat(auto-fit, 60px);
+    gap: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  .day-card {
+    padding: 0.1rem;
+  }
+
+  .day-card-day {
+    font-size: 0.65rem;
+  }
+
+  .day-card img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .weather-map-container {
+    flex-direction: column;
+  }
+
+  #map {
+    height: 300px;
+    margin-top: 1rem;
+  }
+
+  .day-section {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .day-card {
+    padding: 0.5rem;
+  }
+
+  .day-card-day {
+    font-size: 0.8rem;
+  }
+
+  .day-card img {
+    width: 30px;
+    height: 30px;
+  }
+}
