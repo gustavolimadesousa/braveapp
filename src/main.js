@@ -226,9 +226,9 @@ function setValue(selector, value, { parent = document } = {}) {
 function getIconUrl(iconCode) {
   const iconName = ICON_MAP.get(iconCode); // Get the icon name from ICON_MAP using the code
   if (iconName) {
-    return `src/icons/${iconName}.svg`; // Return the path to the icon file
+    return `./src/icons/${iconName}.svg`; // Return the path to the icon file
   } else {
-    return "icons/default-icon.svg"; // Fallback in case no icon is found
+    return "./src/icons/default-icon.svg"; // Fallback in case no icon is found
   }
 }
 
