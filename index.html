@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
   <link rel="stylesheet" href="src/style.css" />
   <title>Brave Weather</title>
-  
 </head>
 
 <body class="blurred">
@@ -17,7 +16,7 @@
       <div id="datetime"></div>
     </div>
     <div class="header-left">
-      <img class="weather-icon large" src="./src/icons/sun.svg" data-current-icon />
+      <img class="weather-icon large" src="./src/icons/sun.svg" alt="Current weather icon" data-current-icon />
       <div class="header-current-temp">
         <span data-current-temp>31</span>&deg;
       </div>
@@ -57,37 +56,37 @@
   <div class="weather-map-container">
     <section class="day-section" data-day-section>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Monday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Tuesday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Wednesday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Thursday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Friday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Saturday</div>
         <div>32&deg;</div>
       </div>
       <div class="day-card">
-        <img src="./src/icons/cloud.svg" class="weather-icon" />
+        <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         <div class="day-card-day">Sunday</div>
         <div>32&deg;</div>
       </div>
@@ -106,7 +105,7 @@
           </div>
         </td>
         <td>
-          <img src="./src/icons/cloud.svg" class="weather-icon" />
+          <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         </td>
         <td>
           <div class="info-group">
@@ -141,7 +140,7 @@
           </div>
         </td>
         <td>
-          <img src="./src/icons/cloud.svg" class="weather-icon" />
+          <img src="./src/icons/cloud.svg" alt="Cloudy weather icon" class="weather-icon" />
         </td>
         <td>
           <div class="info-group">
@@ -173,7 +172,7 @@
 
   <template id="day-card-template">
     <div class="day-card">
-      <img data-icon class="weather-icon" />
+      <img data-icon class="weather-icon" alt="Weather icon" />
       <div class="day-card-day" data-date></div>
       <div><span data-temp></span><span>&deg;</span></div>
     </div>
@@ -188,7 +187,7 @@
         </div>
       </td>
       <td>
-        <img data-icon class="weather-icon" />
+        <img data-icon class="weather-icon" alt="Weather icon" />
       </td>
       <td>
         <div class="info-group">
@@ -224,7 +223,6 @@
   <script type="module" src="src/main.js"></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  
 </body>
 
 </html>
