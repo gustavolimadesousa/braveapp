@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 
 // Function to fetch weather data based on latitude, longitude, and timezone
 export function getWeather(lat, lon, timezone) {
