@@ -12,7 +12,7 @@
 <body class="blurred">
   <header class="header">
     <div class="title">
-      <h1>Brave Weather</h1>
+      <h1 id="titulo-site"><a href="index.html">Brave Weather</a></h1>
       <div id="datetime"></div>
     </div>
     <div class="header-left">
@@ -52,6 +52,13 @@
       </div>
     </div>
   </header>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Enter a city or address" list="suggestions" />
+      <datalist id="suggestions"></datalist>
+      <button id="search-button">Search</button>
+    </div>
 
   <div class="weather-map-container">
     <section class="day-section" data-day-section>

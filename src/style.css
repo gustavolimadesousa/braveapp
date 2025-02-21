@@ -29,6 +29,11 @@ body {
   color: #e6f7ff;
 }
 
+#titulo-site a {
+  text-decoration: none;
+  color: #e6f7ff;
+}
+
 .header-left {
   display: flex;
   width: 50%;
@@ -202,6 +207,55 @@ body {
   height: 40px;
   margin-bottom: 0.25rem;
 }
+
+/* SEARCH SECTION CODE */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 500px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #002233;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search-button:hover {
+  background-color: #0056b3;
+}
+
+datalist {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+datalist option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+datalist option:hover {
+  background-color: #f0f0f0;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
