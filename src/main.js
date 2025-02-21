@@ -1,6 +1,6 @@
 // import "../src/style.css";
-import { getWeather } from "./weather";
-import { ICON_MAP } from "./iconMap";
+import { getWeather } from "./weather.js";
+import { ICON_MAP } from "./iconMap.js";
 
 let map; // Variável global para armazenar a instância do mapa
 
